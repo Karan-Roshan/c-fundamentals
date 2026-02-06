@@ -1,0 +1,24 @@
+// Check Whether the triangle is equilateral, isosceles or scalene triangle
+#include <stdio.h>
+int main()
+{
+    int side1, side2, side3;
+    printf("Enter side of the Triangle: ");
+    scanf("%d %d %d", &side1, &side2, &side3);
+
+    if (side1 == side2 && side2 == side3)
+    {
+        printf("Equilateral Triangle");
+    }
+    else if (side1 == side2 || side2 == side3 || side3 == side1)
+    {
+        printf("Isoceles Triangle");
+    }
+    else if (side1!=side2 && side2!=side3 && side3!=side1) {
+        printf("Scalene Triangle");
+    }
+    else {
+        printf("No other type of Triangle");
+    }
+    return 0;
+}
